@@ -1,0 +1,586 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 20px;
+  text-align: center;
+  background-image: url("https://static.wixstatic.com/media/aa4f8a_fe406d58faaa49db86b050485a2baf81~mv2.jpg/v1/fill/w_581,h_640,al_c,q_85/aa4f8a_fe406d58faaa49db86b050485a2baf81~mv2.webp");
+
+}
+
+h1 {
+	font-family: a Annyeong Haseyo;
+	font-size: 8rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+h2 {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 64px;
+}
+
+h4 {
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+robotFont {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.descriptionSize {
+	font-size: 30px;
+}
+
+/* Style the image */
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* Style the top navigation bar */
+nav {
+	background-color: #333;
+	height: 50px;
+}
+
+nav ul {
+	height: 50px;
+	width: 450px;
+	margin: 0 auto;
+}
+
+nav ul li {
+	list-style-type: none;
+	width: 150px;
+	float: left;
+	text-align: center;
+	width: 20%;
+}
+
+li a {
+	display: block;
+	color: white;
+	line-height: 50px;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: #808080;
+}
+
+
+/* Floats columns to the left */
+.leftText {
+	margin-left: 1%;
+}
+	
+.center {
+	text-align: center;
+}
+
+.center2 {
+	margin: auto;
+	width: 1300px;
+}
+
+/* Aligns text to the right */
+.left {
+	text-align: left;
+}
+
+.koreanCal {
+	font-family: Korean Calligraphy, sans-serif;
+}
+
+/* Create a plain column */
+.plainColumn {
+	width: 960px;
+}
+s
+/* Create a column */
+.column {
+  width: 1000px;
+  background-color: #b3c8cd;
+}
+
+.columnTwo {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Centers the columns */
+#column_container {
+    margin: 100px auto;
+}
+
+/* Prevents content from overflowing from a container */
+.clearfix {
+	overflow: auto;
+}
+
+/* Floats objects to the left */
+.floatLeft
+{
+	float: left;
+}
+
+/* Floats objects to the right */
+.floatRight
+{
+	float: right;
+}
+
+.clearfix {
+	overflow: auto;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media only screen and (min-width: 480px) {
+  div.outline  {
+	width: 100%;
+}
+  
+  div.flex-container {
+    width: 100%;
+  }
+  
+  p#aboveLine {
+	  width: 100%;
+  }
+  
+  div#line {
+	  width: 100%;
+  }
+  
+  div.drink-outline {
+	  width: 100%;
+  }
+  div.drink-flex-container {
+	  width: 100%;
+  }
+  
+  div.center2 {
+	  width: 100%;
+  }
+  
+  &::before
+            content: ''
+            position: absolute
+            top: 0
+            right: 0
+            height: 100vh
+            min-height: 100%
+            width: 400px
+            z-index: -1
+        &::after
+            content: 'Healthy'
+            position: absolute 
+            // margin: 0
+            // padding: 0
+            bottom: -55px
+            left: 0px
+            // bottom: 0
+            // left: 0
+            font-size: 15vw
+            font-weight: bold
+            color: rgba(0, 0, 0, 0.1)
+            z-index: -1
+}
+
+.responsiveContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+	nav.ul li {
+		font-size: 1.5em;
+		line-height: 2.2em;
+	}	
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:481px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:769px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.imgContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centeredBackground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+.menu {
+  .container {
+    background:none;
+    width:150px;
+    height:40px;
+    font-size:11px;
+    color:#fff;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+}
+
+.grid-container {
+  display: grid;
+  grid-row-gap: 1px;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px none rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.boxed {
+  border: 1px solid green ;
+}
+
+/* Creates the menu boxes */
+.outline {
+  border-right: 1px solid #606060;
+  border-bottom: 1px solid #606060;
+  border-left: 1px solid #606060;
+  width: 1500px;
+  margin: 100px auto;
+  padding: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-directon: column;
+  flex: 1;
+  align-items: center;
+  background-color: transparent;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  line-height: 1.75; 
+  font-size: 16px;
+  flex-container: #000000;  
+}
+
+.flex-container > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 5px solid white;
+}
+
+.flex-container > div > img {
+	width: 400px;
+	height: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Line styling */
+#line {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Smaller menu styling */
+.smallMenuOutline {
+  border-right: 1px solid #606060;
+  border-bottom: 1px solid #606060;
+  border-left: 1px solid #606060;
+  width: 750px;
+  margin: 100px auto;
+  padding: 10px;
+}
+
+.smallMenu {
+height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: ;
+  justify-content: space-between;
+  background-color: transparent;
+  border: 5px solid white;
+}
+
+#twoColumns {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Menu title stylings */
+#line {
+  width: 2530px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#aboveLine {
+  color: #000000;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  margin: 0 auto 20px;
+}
+
+#line > #aboveLine.strong {
+  font-weight: bold;
+}
+
+#belowLine {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.02em;
+  margin: 0 auto 30px;
+  text-align: left;
+}
+
+/* Drink menu */
+
+/* Creates the drink menu boxes */
+.drink-outline {
+  border: transparent;
+  width: 2000px;
+  margin: 100px auto;
+  padding: 10px;
+}
+
+.drink-flex-container {
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+.drink-flex-container > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 5px solid white;
+}
+
+#drinkFont {
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+#drinkLine {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Grid rows and columns */
+.item1 {
+  grid-area: myArea;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'myArea.. .';
+  grid-gap: 10px;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: transparent;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/*
+#drinkLine {
+  width: 1908px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#drink {
+  display: flex;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  line-height: 1.75; 
+  font-size: 16px;
+  flex-container: #000000;  
+}
+*/
+
+
+/*
+
+.menu { 
+    width:1500px; 
+    height:190px; 
+    background-color:transparent; 
+    padding-top:20px; 
+    padding-left:15px; 
+    padding-right:15px;
+    border-right: 5px solid #606060;
+    border-bottom: 5px solid #606060;
+    border-left: 5px solid #606060;
+} 
+#st-box { 
+    float:left; 
+    width:180px; 
+    height:160px; 
+    background-color:white; 
+    border:solid black;
+} 
+#nd-box { 
+	float:center; 
+	width:180px; 
+    height:160px; 
+    background-color:white;  
+    border:solid black; 
+    margin-left: 20px; 
+    padding: 70px 0;
+    box-sizing: border-box;
+} 
+#rd-box { 
+    float:right; 
+    width:180px; 
+    height:160px; 
+    background-color:white; 
+    border:solid black;
+    padding: 70px 0;
+    box-sizing: border-box;
+}
+*/ 
+		
+/*
+.menu .box {
+	width: 1500px;
+	margin: 50px;
+	display: table;
+	border-right: 1px solid #606060;
+    border-bottom: 1px solid #606060;
+    border-left: 1px solid #606060;
+	margin: 100px auto;
+}
+
+.menu .box .box-row {
+	display: table-row;
+}
+
+.menu .box .box-cell {
+	display: table-cell;
+	width: 100%;
+	padding: 10px;
+}
+
+.menu .box .box-cell.box1 {
+	background: none;
+	text-align: left;
+}
+
+.menu .box .box-cell.box2 {
+	background: none;
+	text-align: right;
+}
+
+.menu .box .box-cell.small {
+	float: left;
+}
+*/
+
+/* Gap between rows */
+.rowGap {
+	grid-row-gap: 5px;
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  font-family: Montserrat, "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.046875em;
+  line-height: 1.3125;
+  margin: 0 0 1.75em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
